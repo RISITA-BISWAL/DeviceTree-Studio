@@ -11,4 +11,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(dtstudio
     src/main.cpp
+    src/cli/cli.cpp
+)
+
+target_include_directories(dtstudio
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/include
 )

@@ -1,6 +1,6 @@
-#include <iostream>
+#include "cli/cli.h"
 
-int main() {
-    std::cout << "DeviceTree Studio" << std::endl;
-    return 0;
+int main(int argc, char* argv[]) {
+    dtstudio::CLI cli;
+    return cli.run(argc, argv);
 }
